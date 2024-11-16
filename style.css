@@ -1,0 +1,174 @@
+:root{
+  --box-shadow:-5px 5px 10px 5px rgba(128, 128, 128, 0.9);
+}
+
+body {
+  margin: 0;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFAF87;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c08936;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.logo {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  gap: 16px;
+}
+
+/* Element Selector - Decendent */
+.nav-container li {
+  list-style: none;
+  font-weight: 800;
+}
+
+/* Pseudo Class Selector */
+
+.nav-container li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url(./images/hero.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  background-color: rgba(248, 244, 244, 0.8);
+  text-align: center;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+/* Latest Blog and Filter section */
+.latest-blog-filter-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  gap: 12px;
+}
+
+.latest-blog-container {
+  flex-basis: 70%;
+}
+
+.filter-container {
+  border: 2px solid black;
+  flex-basis: 30%;
+}
+
+/* Latest blog cards */
+.latest-blog-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow)
+}
+
+.latest-card-image{
+  height: 150px;
+  width: 150px;
+  border-radius: 12px;
+}
+
+
+/* filter-cards */
+.filter-by-state-card{
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 12px;
+}
+
+.filter-by-year-card{
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 12px;
+  margin-top: 12px;
+}
+
+/* Recommendation container */
+.recommendation-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  gap: 12px;
+  justify-content: center;
+}
+
+
+/* Recommendation Card */
+.recommendation-card{
+  box-shadow: var(--box-shadow);
+  width: 250px;
+  border-radius: 12px;
+
+}
+.recommendation-image{
+  height: 150px;
+  width: 250px;
+  border-radius: 12px;
+}
+
+.recommendation-card-body{
+  padding: 0 12px 12px 12px;
+}
+
+.read-more-button{
+  box-shadow: var(--box-shadow);
+  background-color: #FFAF87;
+  padding: 12px;
+  border-radius: 12px;
+  float: right;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.read-more-button:hover{
+  background-color: #faa072;
+}
+
+/* Subscription section */
+.subscription-form{
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
+
+/* footer section */
+.footer{
+  padding: 20px;
+  text-align: center;
+  background-color: #8d8a89;
+}
